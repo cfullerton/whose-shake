@@ -1,0 +1,24 @@
+<style>
+    .score-container {
+        margin:0 auto;background-color:rgba(255,255,255,0.53);text-align:center;font-size:45px;border-radius:10px;font-family: Papyrus, "Comic Sans MS", cursive, sans-serif;height:40%;
+    }
+    .whos-shake {background-color:rgba(255,255,255,0.53);text-align:center;font-size:24px;border-radius:10px;font-family: Papyrus, "Comic Sans MS", cursive, sans-serif;margin:3% auto 3% auto; width:30%;line-height: normal;}
+    .team {line-height: 70px}
+    .score{line-height:125px;font-size: 80px;}
+</style>
+
+<ion-view title="42" hide-nav-bar="true" id="page1">
+    <ion-content padding="true" style="background: url(img/j5skVgkJRZSniXaUooPr_wildtextures-old-wood-original-file.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding" scroll="false">
+        <div class="score-container" ng-click="increase(us)">
+            <div class="team" >US</div>
+            <div class="score" id="us-score">{{us.display}}</div>
+            
+        </div>
+        <div class="whos-shake">Player {{shake}}'s shake</div>
+        <div class="score-container" ng-click="increase(them)">
+            <div class="team">Them</div>
+            <div class="score" id="them-score" >{{them.display}}</div>
+        </div>
+        
+    </ion-content>
+</ion-view>
