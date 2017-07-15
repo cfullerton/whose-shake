@@ -1,5 +1,6 @@
 dependencies: \
-  /Users/connerfullerton/dominos/Dixie42/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m \
-  /Users/connerfullerton/dominos/Dixie42/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h \
-  /Users/connerfullerton/dominos/Dixie42/platforms/ios/CordovaLib/Classes/CDVAvailability.h \
-  /Users/connerfullerton/dominos/Dixie42/platforms/ios/CordovaLib/Classes/CDVAvailabilityDeprecated.h
+  /Users/cfullerton/Documents/whose-shake/whose-shake/platforms/ios/CordovaLib/CordovaLib_Prefix.pch \
+  /Users/cfullerton/Documents/whose-shake/whose-shake/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m \
+  /Users/cfullerton/Documents/whose-shake/whose-shake/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h \
+  /Users/cfullerton/Documents/whose-shake/whose-shake/platforms/ios/CordovaLib/Classes/CDVAvailability.h \
+  /Users/cfullerton/Documents/whose-shake/whose-shake/platforms/ios/CordovaLib/Classes/CDVAvailabilityDeprecated.h

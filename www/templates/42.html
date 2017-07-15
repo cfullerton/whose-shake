@@ -2,19 +2,26 @@
     .score-container {
         margin:0 auto;background-color:rgba(255,255,255,0.53);text-align:center;font-size:45px;border-radius:10px;font-family: Papyrus, "Comic Sans MS", cursive, sans-serif;height:40%;
     }
-    .whos-shake, .marks {background-color:rgba(255,255,255,0.53);text-align:center;font-size:24px;border-radius:10px;font-family: Papyrus, "Comic Sans MS", cursive, sans-serif;margin:3% auto 3% auto; width:30%;line-height: normal;display:inline-block}
+    .whos-shake, .marks,.undo {background-color:rgba(255,255,255,0.53);text-align:center;font-size:24px;border-radius:10px;font-family: Papyrus, "Comic Sans MS", cursive, sans-serif;margin:3% auto 3% auto; width:30%;line-height: normal;display:inline-block}
+    .undo-active {color:black!important}
+    .undo {color:grey}
     .team {line-height: 70px}
     .score{line-height:125px;font-size: 80px;}
+    .tiny {font-size:20px; position: relative;top:-40px;}
+    .hide {display: none;}
 </style>
 
 <ion-view title="42" hide-nav-bar="true" id="page1">
     <ion-content padding="true" style="background: url(img/j5skVgkJRZSniXaUooPr_wildtextures-old-wood-original-file.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding" scroll="false">
         <div class="score-container" ng-click="increase(us)">
-            <div class="team" >US</div>
+            <div class="team" >
+              US
+            <div class="tiny hide">{{us.title}}</div>
+            </div>
             <div class="score" id="us-score">{{us.display}}</div>
 
         </div>
-        <div class="whos-shake">Player {{shake}}'s shake</div>
+        <div class="whos-shake" ng-click="addPlayerNames()">{{playerNames[shake-1]||"Player " + shake}}'s shake</div>
         <div class="marks">
           <select ng-model="marks.marks">
             <option value=1 label = "1" default>1</option>
@@ -25,8 +32,14 @@
           </select>
           Marks
         </div>
+        <div class="undo" ng-click="undo()">
+          Undo
+        </div>
         <div class="score-container" ng-click="increase(them)">
-            <div class="team">Them</div>
+            <div class="team">
+              Them
+              <div class="tiny hide">{{them.title}}</div>
+            </div>
             <div class="score" id="them-score" >{{them.display}}</div>
         </div>
 

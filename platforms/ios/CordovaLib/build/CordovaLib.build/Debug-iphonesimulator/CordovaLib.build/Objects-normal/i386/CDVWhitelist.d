@@ -1,3 +1,4 @@
 dependencies: \
-  /Users/connerfullerton/dominos/Dixie42/platforms/ios/CordovaLib/Classes/CDVWhitelist.m \
-  /Users/connerfullerton/dominos/Dixie42/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+  /Users/cfullerton/Documents/whose-shake/whose-shake/platforms/ios/CordovaLib/CordovaLib_Prefix.pch \
+  /Users/cfullerton/Documents/whose-shake/whose-shake/platforms/ios/CordovaLib/Classes/CDVWhitelist.m \
+  /Users/cfullerton/Documents/whose-shake/whose-shake/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
